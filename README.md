@@ -108,7 +108,7 @@ Swiper.use({
 ```
 
 
-### Difference（使用方法的异同）
+### Difference
 
 **SSR and the only difference in the use of the SPA:**
 - SPA worked by the `component`, find swiper instance by `ref attribute`.
@@ -188,7 +188,6 @@ Swiper.use({
       return {
         swiperOption: {
           // some swiper options/callbacks
-          // 所有的参数同 swiper 官方 api 参数
           // ...
         }
       }
@@ -200,7 +199,6 @@ Swiper.use({
     },
     mounted() {
       // current swiper instance
-      // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
       console.log('this is current swiper instance object', this.swiper)
       this.swiper.slideTo(3, 1000, false)
     }
@@ -245,7 +243,7 @@ Swiper.use({
 
 
 # API
-Swiper's API and configuration can be used.（Swiper官网中的API及配置均可使用）
+Swiper's API and configuration can be used.
 - [CN Swiper4 documents](http://www.swiper.com.cn/api/index2.html)
 - [EN Swiper4 documents](http://idangero.us/swiper/api/)
 
